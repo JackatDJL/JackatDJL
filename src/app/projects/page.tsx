@@ -10,8 +10,6 @@ export default function Page() {
           <li>
             <a
               href="https://hamburghackaton.vercel.app"
-              target="_blank"
-              rel="noopener noreferrer"
               className="text-primary hover:text-secondary-foreground duration-100"
             >
               Hamburg Hack A Ton
@@ -20,8 +18,6 @@ export default function Page() {
           <li>
             <a
               href="https://athe-sv.vercel.app/"
-              target="_blank"
-              rel="noopener noreferrer"
               className="text-primary hover:text-secondary-foreground duration-100"
             >
               Athe-SV
@@ -32,6 +28,7 @@ export default function Page() {
           <Link
             href="/"
             className="text-primary hover:text-secondary-foreground duration-100"
+            prefetch
           >
             Back to Home
           </Link>
