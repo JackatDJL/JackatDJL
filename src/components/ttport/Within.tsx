@@ -13,7 +13,6 @@ const Within = forwardRefWithAs(function Within<
     forceMotion = false,
     onClick,
     style = {},
-    idPrefix = "",
     as: Component = "button",
     "aria-label": ariaLabel = "Toggle theme",
     className,
@@ -29,10 +28,10 @@ const Within = forwardRefWithAs(function Within<
     className,
   ].join(" ");
   style["--theme-toggle__within--duration"] = `${duration}ms`;
-  if (Component === "button" && !rest.type) (rest as any).type = "button";
+  if (Component === "button" && !rest.type) rest.type = "button";
   const handleClick: MouseEventHandler<TTag> = (e) => {
-    onToggle && onToggle(!toggled);
-    onClick && onClick(e);
+    onToggle(!toggled);
+    onClick(e);
   };
   return (
     <Component

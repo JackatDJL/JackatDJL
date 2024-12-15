@@ -1,3 +1,5 @@
+/* eslint-disable @typescript-eslint/no-unused-vars */
+/* eslint-disable @typescript-eslint/no-explicit-any */
 import {
   Dispatch,
   ComponentType,
@@ -5,6 +7,7 @@ import {
   ComponentProps,
   MouseEventHandler,
   ReactNode,
+  JSX,
 } from "react";
 
 export type ReactTag = keyof JSX.IntrinsicElements | ComponentType<any>;
